@@ -1,0 +1,170 @@
+.log-in {
+  height: 100vh;
+  background-image: linear-gradient(#0000007e, #0000007e),
+    url(/background_banner.jpg);
+  padding: 20px 8%;
+}
+.main {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 20px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.head p {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+}
+.login {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.sign {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.inputs img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+.inputs input[type="text"],
+.inputs input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: transparent;
+  color: #333;
+  border-radius: 8px;
+}
+
+.inputs input::placeholder {
+  color: #777;
+  font-style: italic;
+}
+
+.inputs:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Button div */
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.buttons {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #e50914;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.gray {
+  background: #000000;
+  color: antiquewhite;
+}
+
+.btn button:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 5px; */
+}
+.sub {
+  width: 48%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: #e50914;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sub:hover {
+  transform: translateY(-5px);
+}
+
+.check {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.check input {
+  width: 18px;
+}
+
+.gif {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gif img {
+  width: 60px;
+}
+
+@media (max-width: 500px) {
+  .log-in {
+    padding: 15px 5%;
+  }
+  .log-in img {
+    width: 120px;
+  }
+  .main {
+    padding: 10px;
+    margin-top: 30px;
+  }
+}

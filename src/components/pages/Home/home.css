@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+}
+.hero-banner {
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 75%);
+  -weblit-mask-image: linear-gradient(to right, transparent, black 75%);
+}
+
+.title {
+  position: absolute;
+  width: 100%;
+  padding-left: 6%;
+  bottom: 0;
+}
+.title-hero {
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 30px;
+}
+
+.title p {
+  max-width: 700px;
+  font-size: 20px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.btns .btn1 img {
+  width: 25px;
+}
+
+.btns .btn1 {
+  border: 0;
+  outline: 0;
+  padding: 8px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 606;
+  background-color: aliceblue;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btns .btn1.dark {
+  color: #fff;
+  background: #6d6d6eb3;
+}
+
+.btn1:hover {
+  background: #ffffffbf;
+}
+
+.btn1.dark:hover {
+  background: #6d6d6e66;
+}
+
+.more-card {
+  padding: 6%;
+}
+
+@media (max-width: 1024px) {
+  .hero .title-cards {
+    display: none;
+  }
+  .hero .btns {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .title {
+    padding-left: 4%;
+  }
+  .title-hero {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+  .title p {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  .btns img {
+    width: 20px;
+  }
+  .more-card {
+    padding-left: 4%;
+  }
+}
+@media (max-width: 500px) {
+  .title-hero {
+    display: none;
+  }
+  .btns .btn1 img {
+    width: 15px;
+  }
+  .btns .btn1 {
+    padding: 4px 10px;
+    gap: 5px;
+    font-size: 10px;
+  }
+  .title p {
+    display: none;
+  }
+}
