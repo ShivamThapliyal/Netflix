@@ -7,7 +7,7 @@ function Title({ title, category }) {
   const scrollref = useRef();
   const [apidata, setapidata] = useState([]);
   const handelWheel = (event) => {
-    event.preventDefault;
+    event.preventDefault();
     scrollref.current.scrollLeft += event.deltaY;
   };
   const options = {
